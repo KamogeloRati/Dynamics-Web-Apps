@@ -1,0 +1,26 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+sl-card {
+  --sl-panel-background: #d81919;
+  --sl-panel-border-radius: 10px;
+  --sl-panel-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+sl-button {
+  margin: 0 10px;
+}
+
+#counter-value {
+  font-size: 24px;
+  margin: 0 10px;
+}
