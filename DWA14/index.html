@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+  <link rel="stylesheet" href="style.css">
+  <title> Counter App</title>
+</head>
+
+<body>
+ 
+
+  
+  <style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  sl-card {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #d11111;
+  }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  sl-button {
+    font-size: 1.5em;
+    width: 60px;
+    height: 40px;
+  }
+
+ 
+  
+  
+  #counter-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  sl-button#reset {
+    background-color: #e74c3c;
+    color: #f01010;
+    margin-top: 10px;
+  }
+
+ 
+ 
+</style>
+
+
+<div class="container">
+    <sl-card>
+      <h1>Counter App</h1>
+      <div class="counter">
+        <sl-button id="increment-btn" @click=${increment}>+Add</sl-button>
+        <div id="counter-value">0</div>
+        <sl-button id="decrement-btn" @click=${decrement}>-Sub</sl-button>
+      </div>
+      <sl-button id="reset" @click=${reset}>Reset</sl-button>
+     </sl-card>
+    </div>
+  </div>
+
+  <script type="module" src="user-action.js"></script>
+  <script type="module" src="counter.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script>
+</body>
+
+</html>
